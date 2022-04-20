@@ -1,1 +1,2 @@
-gcc blink.c -o blink -lwiringPi
+default:
+	gcc blink.c -o blink -lwiringPi
