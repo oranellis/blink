@@ -1,2 +1,3 @@
 default:
-	gcc blink.c -o blink -lwiringPi
+	g++ blink.cpp threadedPrint.cpp -o blink.app -std=c++2a
+	./blink.app
