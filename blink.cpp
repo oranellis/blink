@@ -14,10 +14,12 @@ int main(void) {
 
         int anInt = 5;
 
+        bool interrupt = false;
+
         ThreadedPrint printingThreadInstance;
         // std::thread printingThreadThread(&ThreadedPrint::InterruptPrint, &printingThreadInstance);
         std::cout << "instance created" << std::endl;
-        printingThreadInstance.otherFunction();
+        printingThreadInstance.otherFunction(&interrupt);
         
 
         while(true) {

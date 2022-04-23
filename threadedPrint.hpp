@@ -11,9 +11,9 @@ class ThreadedPrint {
 
     ThreadedPrint();
 
-    void InterruptPrint() ;
+    void InterruptPrint(bool* interrupt);
 
-    void otherFunction() ;
+    void otherFunction(bool* interrupt);
 };
 
 #endif // THREADED_SLEEP_H
