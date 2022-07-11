@@ -11,11 +11,11 @@ ThreadedPrint::ThreadedPrint() {
 
 void ThreadedPrint::InterruptPrint(bool* interrupt) {
 
-    // std::this_thread::sleep_for(std::chrono::seconds(10));
-    while (!*interrupt)
+    std::cout << "Testprint" << std::endl;
+    while (true) {
     std::cout << "This prints every 10 seconds";
     std::this_thread::sleep_for(std::chrono::seconds(10));
-
+	}
 }
 
 void ThreadedPrint::otherFunction(bool* interrupt) {
